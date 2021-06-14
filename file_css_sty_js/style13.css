@@ -1,0 +1,232 @@
+   *{
+        margin: 0;
+        padding: 0;
+    }
+   
+    header{
+        clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 8% 98%, 0% 50%, 8% 2%);
+       width: 100%;
+       height: 150px;
+       background-image:linear-gradient(to right, rgb(80, 84, 133),rgb(110, 148, 197),rgb(65, 73, 184),blue);
+       
+   } 
+   #logo{
+       width: 30%;
+       height: 110px;
+       float:right;
+       background-color: white;
+       padding: 20px 15px;
+       
+   }
+   #whabh2{
+       float: left;
+       font-weight: bold;
+       color:black;
+       line-height: 100px;
+       letter-spacing: 10px;
+       -webkit-text-stroke-color: rgb(58, 58, 248);
+       -webkit-text-stroke-width: 1px;
+       color: transparent;
+       background-image: url(animi/);
+       -webkit-background-clip:text;
+       -webkit-background-width:100% ;
+   }
+   #logoimg{
+       width: 30%; 
+        height: 100px;
+        border-radius:50% ;
+        position: relative;
+        right: -50px;
+   }
+   nav{
+       width: 50%;
+       text-align: center;
+       height: 150px;
+       
+   }
+   nav ul li{
+       display: inline-block; 
+      transform: translatey(350%);
+      
+   }
+   ul li a{
+       text-decoration: none;
+       padding: 10px;
+       border: 2px solid blue;
+       background-color: white;
+      
+   }
+   ul li a:hover{
+       text-decoration: none;
+       padding: 13px;
+       border:2px solid black;
+       background-color: blue;
+       color: white;
+       cursor:alias;
+   }
+   nav ul #home{
+   background: blue;
+   color:white;
+   }
+   aside{
+       width: 30%;
+       height: 600px;
+       background:white;
+       text-align: center;
+       float: left;
+       position: relative;
+   }
+    aside article .more{
+       text-decoration: none;
+    }
+    .insp{
+       text-decoration: none;
+    }
+   aside video{
+       margin-top: 5px;
+       width: 100%;
+       height: 200px;
+   }
+   .arti{
+       margin-top: 5px;
+   }
+   h3{
+   color:blue;
+   text-align: center;
+   padding:20px;
+   border: solid black 2px;
+
+   }
+   h3:hover{
+       color:white;
+       text-align: center;
+       padding:20px;
+       border:solid wheat 2px;
+       background-color: rgb(75, 52, 207);
+   } 
+   
+   main{
+       width: 70%;
+       height: 600px;
+       background-image: url(animi/anmi1.jpg);
+       animation-name:anicolors;
+       animation-duration: 12s;
+       animation-iteration-count:infinite;
+       position: relative;
+       right: -30%;
+   }
+   @keyframes anicolors{
+       0%{
+            background-image: url(animi/animi6.jpg);
+           
+           
+       }
+       50%{
+           background-image: url(animi/animi7.jpg);
+          
+       }
+       100%{
+           background-image: url(animi/animi2.jpg);
+       }
+       
+   }
+   .main{
+       background:white;
+       width:60%;
+       float:right;
+       height: 200px;
+       transform: translate(35%,-70%);
+       position: absolute;
+       bottom: 10%;
+       right:40%;
+       text-align: center;
+       border-radius: 30px 40px;
+   }
+   div .para{
+       padding: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   main div .h{
+       
+       padding: 20px;
+       background-color: blue;
+       color: white;
+       padding: 20px;
+       text-align: justify;
+       padding-left: 20px;
+       padding-right: 20px;
+       text-align: center;
+       font-weight: lighter;
+   }
+
+.main:hover{
+    background:rgb(73, 63, 63);
+    width:65%;
+    float:right;
+    height: 200px;
+    transform: translate(35%,-70%);
+    position: absolute;
+    bottom: 10%;
+    right:40%;
+    text-align: center;
+    border-radius: 30px 40px;
+    text-align: justify;
+    opacity: 0.5;
+    color:white;
+    border-radius: 20px 30px;
+   }
+   .box_content{
+       text-align: center;
+       position: relative;
+       transform: translate(-20%);
+       top: 70%;
+       margin: 5px;
+       padding-bottom:5px;
+       
+   }
+   .box_content img{
+       margin-top:0px;
+       width: 30px;
+       padding: 5px;
+       border-bottom: 2px solid blue;
+   }
+   .box_content img:hover{
+    width: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    background: rgb(231, 231, 248);
+   }
+   /*
+   footer{
+       
+       width: 100%;
+       height: 200px;
+       background:yellow
+   }
+   */
+ @media only screen and (min-width:940px) and (max-width:1070px) {
+    #logo{
+       width: 35%;
+     }
+     main{
+         width: 65%;
+     }
+     aside{
+         width: 35%;
+     }
+ }
+ @media only screen and(max-width:940px) and (min-width:802px){
+    #logo{
+        width: 40%;
+    }
+ }
+ @media only screen and (max-width:801px) {
+     header{
+         height: auto;
+     }
+    #logo{
+     width: 100%;
+     }
+     
+ }
